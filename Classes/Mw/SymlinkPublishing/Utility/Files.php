@@ -1,5 +1,5 @@
 <?php
-namespace Mw\SymlinkResourceTarget\Utility;
+namespace Mw\SymlinkPublishing\Utility;
 
 use TYPO3\Flow\Exception;
 use TYPO3\Flow\Utility\Files as FlowFiles;

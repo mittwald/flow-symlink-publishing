@@ -1,5 +1,5 @@
 {
-    "name": "mittwald-flow/symlink-resource-target",
+    "name": "mittwald-flow/symlink-publishing",
     "type": "typo3-flow-package",
     "description": "Publish resources to the filesystem using relative symlinks",
     "license": "MIT",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Mw\\SymlinkResourceTarget": "Classes"
+            "Mw\\SymlinkPublishing": "Classes"
         }
     }
 }

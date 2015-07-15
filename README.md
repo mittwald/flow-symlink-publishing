@@ -10,7 +10,7 @@ Installation
 
 Install using composer:
 
-    composer require mittwald-flow/symlink-resource-target
+    composer require mittwald-flow/symlink-publishing
 
 Configuration
 -------------
@@ -23,11 +23,11 @@ You can configure relative symlink publishing in the Flow settings.
 		resource:
 		  targets:
 			localWebDirectoryPersistentResourcesTarget:
-			  target: 'Mw\SymlinkResourceTarget\Resource\Target\FileSystemSymlinkTarget'
+			  target: 'Mw\SymlinkPublishing\Resource\Target\FileSystemSymlinkTarget'
 			  targetOptions:
 				relativeSymlinks: TRUE
 			localWebDirectoryStaticResourcesTarget:
-			  target: 'Mw\SymlinkResourceTarget\Resource\Target\FileSystemSymlinkTarget'
+			  target: 'Mw\SymlinkPublishing\Resource\Target\FileSystemSymlinkTarget'
 			  targetOptions:
 				relativeSymlinks: TRUE
 

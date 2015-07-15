@@ -1,7 +1,7 @@
 <?php
-namespace Mw\SymlinkResourceTarget\Resource\Target;
+namespace Mw\SymlinkPublishing\Resource\Target;
 
-use Mw\SymlinkResourceTarget\Utility\Files;
+use Mw\SymlinkPublishing\Utility\Files;
 use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Resource\Collection;
 use TYPO3\Flow\Resource\Exception;
