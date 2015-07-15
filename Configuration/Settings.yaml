@@ -1,0 +1,12 @@
+TYPO3:
+  Flow:
+    resource:
+      targets:
+        localWebDirectoryPersistentResourcesTarget:
+          target: 'Mw\SymlinkResourceTarget\Resource\Target\FileSystemSymlinkTarget'
+          targetOptions:
+            relativeSymlinks: TRUE
+        localWebDirectoryStaticResourcesTarget:
+          target: 'Mw\SymlinkResourceTarget\Resource\Target\FileSystemSymlinkTarget'
+          targetOptions:
+            relativeSymlinks: TRUE
