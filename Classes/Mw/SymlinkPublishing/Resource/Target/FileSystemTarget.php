@@ -49,12 +49,6 @@ class FileSystemTarget extends FlowFileSystemTarget {
 	protected function setOption($key, $value) {
 		switch ($key) {
 			case 'baseUri':
-				if (strpos($value, '://') === FALSE && $value[0] !== '/') {
-					$this->baseUri = $this->detectResourcesBaseUri() . $value;
-				} else {
-					$this->baseUri = $value;
-				}
-				break;
 			case 'path':
 				$this->$key = $value;
 				break;
