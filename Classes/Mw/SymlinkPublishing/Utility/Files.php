@@ -10,9 +10,12 @@ use TYPO3\Flow\Utility\Files as FlowFiles;
 class Files extends FlowFiles {
 
 	static public function createRelativeSymlink($target, $link) {
-		if (file_exists($link)) {
+		if (is_dir($link)) {
+			self::removeDirectoryRecursively($link);
+		} else if (file_exists($link)) {
 			self::unlink($link);
 		}
+		
 		$relativeTargetPath = Files::getRelativePath($link, $target);
 		if (DIRECTORY_SEPARATOR !== '/') {
 			$relativeTargetPath = str_replace('/', '\\', $relativeTargetPath);
