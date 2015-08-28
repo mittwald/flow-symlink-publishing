@@ -12,6 +12,14 @@ Install using composer:
 
     composer require mittwald-flow/symlink-publishing
 
+Next delete all absolute referenced symlinks, etc., from the _Resources folder:
+
+    rm -rf Web/_Resources
+
+Finally reissue the relative referenced symlinks, etc.:
+
+    ./flow resources:publish
+
 Configuration
 -------------
 
