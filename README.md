@@ -18,7 +18,7 @@ Next delete all absolute referenced symlinks, etc., from the _Resources folder:
 
 Finally reissue the relative referenced symlinks, etc.:
 
-    ./flow resources:publish
+    ./flow resource:publish
 
 Configuration
 -------------
