@@ -33,11 +33,11 @@ You can configure relative symlink publishing in the Flow settings.
 			localWebDirectoryPersistentResourcesTarget:
 			  target: 'Mw\SymlinkPublishing\Resource\Target\FileSystemSymlinkTarget'
 			  targetOptions:
-				  relativeSymlinks: TRUE
+				relativeSymlinks: TRUE
 			localWebDirectoryStaticResourcesTarget:
 			  target: 'Mw\SymlinkPublishing\Resource\Target\FileSystemSymlinkTarget'
 			  targetOptions:
-				  relativeSymlinks: TRUE
+				relativeSymlinks: TRUE
 
 
 ### Change Flow root path
@@ -53,10 +53,10 @@ Add following to your global or site package Settings.yaml
 		  targets:
 			localWebDirectoryPersistentResourcesTarget:
 			  targetOptions:
-				  path: '%FLOW_PATH_ROOT%Web/_Resources/Persistent/'
+				path: '%FLOW_PATH_ROOT%Web/_Resources/Persistent/'
 			localWebDirectoryStaticResourcesTarget:
 			  targetOptions:
-				  path: '%FLOW_PATH_ROOT%Web/_Resources/Static/Packages/'
+				path: '%FLOW_PATH_ROOT%Web/_Resources/Static/Packages/'
 
 License
 -------
