@@ -44,6 +44,25 @@ You can configure relative symlink publishing in the Flow settings.
 			  targetOptions:
 				relativeSymlinks: TRUE
 
+
+### Change Flow root path
+
+If you change the FLOW_ROOTPATH (for exmaple you use the TYPO3/Surf deployment) and your webserver documentRoot is a other one as the FLOW_ROOTPATH, you have to change the **path** options at the **resource** -> **targets** -> **targetOptions**
+from '%FLOW_PATH_WEB%' to '%FLOW_PATH_ROOT%'.
+
+Add following to your global or site package Settings.yaml
+
+	TYPO3:
+	  Flow:
+		resource:
+		  targets:
+			localWebDirectoryPersistentResourcesTarget:
+			  targetOptions:
+				path: '%FLOW_PATH_ROOT%Web/_Resources/Persistent/'
+			localWebDirectoryStaticResourcesTarget:
+			  targetOptions:
+				path: '%FLOW_PATH_ROOT%Web/_Resources/Static/Packages/'
+
 License
 -------
 
