@@ -4,7 +4,7 @@
     "description": "Publish resources to the filesystem using relative symlinks",
     "license": "MIT",
     "require": {
-        "typo3/flow": "3.*"
+        "typo3/flow": ">=3.0.0 <3.0.2"
     },
     "autoload": {
         "psr-0": {
