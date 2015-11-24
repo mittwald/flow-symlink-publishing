@@ -55,6 +55,9 @@ class FileSystemTarget extends FlowFileSystemTarget {
 			case 'subdivideHashPathSegment':
 				$this->subdivideHashPathSegment = (boolean)$value;
 				break;
+			case 'extensionBlacklist':
+				$this->extensionBlacklist = $value;
+				break;
 			default:
 				return FALSE;
 		}
