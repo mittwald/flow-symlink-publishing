@@ -44,6 +44,24 @@ You can configure relative symlink publishing in the Flow settings.
 			  targetOptions:
 				relativeSymlinks: TRUE
 
+
+#### Changed FLOW_PATH_ROOT or FLOW_PATH_WEB
+
+If you change the FLOW_PATH_WEB or FLOW_PATH_ROOT, please do not forget to change the **path** options at the **Flow** -> **resource** -> **targets**.
+
+You can do this with following Settings.yaml configuration:
+
+	TYPO3:
+	  Flow:
+		resource:
+		  targets:
+			localWebDirectoryPersistentResourcesTarget:
+			  targetOptions:
+				path: '[your_flow_path]/Web/_Resources/Persistent/'
+			localWebDirectoryStaticResourcesTarget:
+			  targetOptions:
+				path: '[your_flow_path]/Web/_Resources/Static/Packages/'
+
 License
 -------
 
