@@ -5,10 +5,10 @@ This package provides advanced symlink publishing options for Flow and Neos.
 Most importantly, this package adds the option to publish resources using relative symlinks.
 This is important when you run Flow or Neos with a chrooted PHP interpreter.
 
-**Compatibility notices**: The `master` branch of this package (and all `~2.0`
-versions) are compatible with Flow 3.0.2 and newer (which is used by
-Neos 2.0.4 and newer). When you're using Flow 3.0.0 or 3.0.1 or Neos 2.0.3 or
-older, use one of the `~1.0` versions or the `v1.0` branch instead.
+**Compatibility notices**:
+* The `master` branch of this package and all `~2.0` versions are compatible with Flow >=3.0.2 and stop working with Flow 4.0.
+* When you're using Flow 3.0.0 or 3.0.1 or Neos 2.0.3 or older, use one of the `~1.0` versions or the `v1.0` branch instead.
+* Keep in mind that if you're using [Flow 3.3](http://flowframework.readthedocs.io/en/stable/TheDefinitiveGuide/PartV/ReleaseNotes/330.html#symlinks-can-now-be-relative) or newer you don't need this package anymore. The `FileSystemSymlinkTarget` can now be configured to create relative symlinks for published resources by default.
 
 Installation
 ------------
